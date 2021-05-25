@@ -57,21 +57,23 @@ jobs:
       fail-fast: false
       matrix:
         example:
-          - "coremark"
-          - "dhrystone"
-          - "whetstone"
-          - "helloworld"
-          - "demo_dsp"
-          - "demo_eclic"
-          - "demo_timer"
-          - "freertos_demo"
-          - "rtthread_demo"
-          - "rtthread_msh"
-          - "ucosii_demo"
-
-          # - "demo_nice"
+          - "freedom-e-sdk_freertos-blinky"
+          - "freedom-e-sdk_freertos-blinky-system-view"
+          - "freedom-e-sdk_freertos-pmp-blinky"
+          - "freedom-e-sdk_hello"
+          - "freedom-e-sdk_multicore-hello"
+          - "freedom-e-sdk_sifive-welcome"
+          - "freedom-e-sdk_spi"
+          - "freedom-e-sdk_test-coreip"
+          - "freedom-e-sdk_timer-interrupt"
+          - "freedom-e-sdk_user-mode"
+          - "freedom-e-sdk_user-syscall"
+          - "native-blink_asm"
+          - "zephyr-blink"
+          - "zephyr-hello-world"
+          - "zephyr-synchronization"
         package: ["pio","qio"]
-        os: [ubuntu-latest, windows-latest]
+        os: [ubuntu-latest, windows-latest, macos-latest]
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v2
