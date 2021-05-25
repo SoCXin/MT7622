@@ -72,7 +72,7 @@ jobs:
           - "zephyr-blink"
           - "zephyr-hello-world"
           - "zephyr-synchronization"
-        package: ["pio","qio"]
+        # package: ["pio","qio"]
         os: [ubuntu-latest, windows-latest, macos-latest]
     runs-on: ${{ matrix.os }}
     steps:
@@ -86,14 +86,14 @@ jobs:
         with:
           python-version: 3.9
 
-      - name: Install qio
-        if: matrix.package == 'qio'
-        run: |
-          pip install -U https://github.com/OS-Q/M03/releases/latest/download/qio.zip
-          pio platform install file://.
+      # - name: Install qio
+      #   if: matrix.package == 'qio'
+      #   run: |
+      #     pip install -U https://github.com/OS-Q/M03/releases/latest/download/qio.zip
+      #     pio platform install file://.
 
       - name: Install pio
-        if: matrix.package == 'pio'
+        # if: matrix.package == 'pio'
         run: |
           pip install -U https://github.com/platformio/platformio/archive/develop.zip
           pio platform install file://.
