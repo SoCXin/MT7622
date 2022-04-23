@@ -41,4 +41,13 @@ MT7622引入了一流的功能，如蓝牙5.0和专用的网络加速引擎与�
 
 [BPI-R64](https://wiki.banana-pi.org/%E9%A6%99%E8%95%89%E6%B4%BE_BPI-R64)
 
+
+[MT7623N](https://www.mediatek.com/products/home-networking/mt7623n-a)
+
+* Quad-core ARM Cortex-A7
+* Mali 450 MP4 GPU
+* 2G DDR3 SDRAM
+* 5 port Gigabit Ethernet Switch + RGMII + TRGMII
+* 1T1R Wi-Fi 4 (n)
+
 ### [www.SoC.xin](http://www.SoC.Xin)
